@@ -12,14 +12,12 @@ app.use(cors({
     credentials:true
 }));
 app.use(express.json());
-mongoose.connect(MONGODB_URL);
-const db=mongoose.connection;
-db.on('error',(err)=>{
-    console.error("Mongodb connection error" ,err);
-});
-db.once('open',()=>{
-    console.log("Mongodb is connected ");
-});
+
+mongoose.connect(MONGODB_URL)
+.then(()=> console.log('Mongodb is connected'))
+.catch((err)=>console.log("Mongodb connection error :",err));
+
+const db = mongoose.connection;
 const userSchema= new mongoose.Schema({
     name:String,
     email:String,
