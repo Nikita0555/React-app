@@ -3,7 +3,7 @@ const mongoose=require('mongoose')
 const cors=require('cors')
 const PORT=process.env.PORT || 5000;
 const app=express();
-const MONGODB_URL=process.env.MONGODB_URL|| "mongodb+srv://dbUserform:nfdjdDhjRbhT@cluster0.nj0efhf.mongodb.net/?appName=Cluster0";
+const MONGODB_URL=process.env.MONGODB_URL|| "mongodb+srv://dbUserform:ClinicUser123@cluster0.nj0efhf.mongodb.net/?appName=Cluster0";
 
 //middleware
 app.use(cors({
