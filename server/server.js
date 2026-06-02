@@ -7,7 +7,7 @@ const MONGODB_URL=process.env.MONGODB_URL|| "mongodb+srv://dbUserform:RXJoQ0ztNr
 
 //middleware
 app.use(cors({
-    origin: "willowy-syrniki-ccfa63.netlify.app",
+    origin: "https://willowy-syrniki-ccfa63.netlify.app",
     method: ["POST", "GET"],
     credentials:true
 }));
@@ -46,7 +46,7 @@ app.post('/submit',async(req,res)=> {
 }
 });
 app.get("/",(req,res)=>{
- res.send("Backend is working correctly")
+ res.send("Backend is working correctly");
 });
 
 app.listen(PORT);
