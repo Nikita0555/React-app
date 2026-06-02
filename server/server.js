@@ -25,9 +25,10 @@ const userSchema= new mongoose.Schema({
     city:String,
     state:String,
     message:String
-})
+});
 
-const User=mongoose.model('User',userSchema)
+const User=mongoose.model('User',userSchema);
+
 app.post('/submit',async(req,res)=> {
     try{
     const newUser =new User({
