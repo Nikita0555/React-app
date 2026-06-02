@@ -6,7 +6,11 @@ const app=express();
 const MONGODB_URL=process.env.MONGODB_URL|| "mongodb+srv://dbUserform:RXJoQ0ztNr1cwxlP@cluster0.nj0efhf.mongodb.net/?appName=Cluster0";
 
 //middleware
-app.use(cors());
+app.use(cors({
+    origin: "willowy-syrniki-ccfa63.netlify.app",
+    method: ["POST", "GET"],
+    credentials:true
+}));
 app.use(express.json());
 mongoose.connect(MONGODB_URL);
 const db=mongoose.connection;
