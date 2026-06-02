@@ -43,33 +43,41 @@ import axios from 'axios';
     
       <div>
       <h5>Enter your name</h5>
-        <input type='text' placeholder='Enter your name' name='name' onChange={handleChange} value={value.name} />
+        <input type='text' placeholder='Enter your name' 
+        name='name' onChange={handleChange} value={value.name} />
       </div>
       <div>
         <h5>Enter your e-mail</h5>
-        <input type='text' placeholder='Enter your phone e-mail'name='email' onChange={handleChange} value={value.email}  />
+        <input type='text' placeholder='Enter your phone e-mail'
+        name='email' onChange={handleChange} value={value.email}  />
       </div>
       <div>
         <h5>Address</h5>
-        <input type='text' placeholder='Enter your address' name='address' onChange={handleChange} value={value.address} />
+        <input type='text' placeholder='Enter your address' 
+        name='address' onChange={handleChange} value={value.address} />
       </div>
       
       <div className='imp-data d-flex flex-column justify-content-between'>
       <div>
       <h5>City</h5>
-        <input id='imp' type='text'placeholder='Enter your city' name='city' onChange={handleChange} value={value.city}/></div>
+        <input id='imp' type='text'placeholder='Enter your city' 
+        
+        name='city' onChange={handleChange} value={value.city}/></div>
         <div> 
         <h5>State</h5>
-        <input id='imp' type='text'placeholder='Enter your state' name='state' onChange={handleChange} value={value.state}/></div>
+        <input id='imp' type='text'placeholder='Enter your state' 
+        name='state' onChange={handleChange} value={value.state}/></div>
        
 
       </div>
       <div>
         <h5>Message</h5>
-       <textarea type='text' placeholder='Enter your message' name='message' onChange={handleChange} value={value.message} />
+       <textarea type='text' placeholder='Enter your message' name='message' 
+       onChange={handleChange} value={value.message} />
       </div>
       <div>
-        <button  type="submit" className='btn btn-danger' onSubmit={handleSubmit} >Submit</button>
+        <button  type="submit" className='btn btn-danger'
+         onSubmit={handleSubmit} >Submit</button>
        
       </div>
 
