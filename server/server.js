@@ -45,5 +45,8 @@ app.post('/submit',async(req,res)=> {
  res.status(500).json({error:"Internal server error"});
 }
 });
+app.get("/",(req,res)=>{
+ res.send("Backend is working correctly")
+});
 
 app.listen(PORT);
