@@ -27,7 +27,7 @@ import axios from 'axios';
 
     const handleSubmit = async(e)=>{
       e.preventDefault();
-      const submit =await axios.post("http://localhost:5000/submit",value);
+      const submit =await axios.post("https://react-app-dege.onrender.com/submit",value);
    console.log(submit.data);
     }
 

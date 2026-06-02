@@ -1,9 +1,9 @@
 const express=require('express');
 const mongoose=require('mongoose')
 const cors=require('cors')
-const PORT=5000;
+const PORT=process.env.PORT || 5000;
 const app=express();
-const MONGODB_URL="mongodb://localhost:27017/ClinicLogin";
+const MONGODB_URL=process.env.MONGODB_URL;
 
 //middleware
 app.use(cors());
